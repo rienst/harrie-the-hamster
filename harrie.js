@@ -12,7 +12,7 @@ const Discord = require('discord.js')
 const harrie = new Discord.Client()
 
 // This is the text channel Harrie will use to notify you about stuff
-const notificationChannel = '418487857477320758'
+const notificationChannel = process.env.DISCORD_NOTIFICATION_CHANNEL
 
 // These are the things Harrie will do when he joins a Discord server
 harrie.on('ready', () => {
