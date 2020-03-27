@@ -1,0 +1,12 @@
+{
+  "name": "harrie-the-hamster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "harrie.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.0.2"
+  }
+}
