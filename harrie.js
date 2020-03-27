@@ -14,11 +14,13 @@ const Discord = require('discord.js')
 const harrie = new Discord.Client()
 
 /**
- * Here you can tell Harrie some stuff about your particular Discord server,
- * like the channel ID that he should use to send messages or the token he
- * should be using to login. It is, however, recommended that you specify these
- * variables in your deployment environment. If those environment variables are
- * declared, Harrie will use them instead of the ones beneith.
+ * Here you can tell Harrie some stuff about your particular Discord server like
+ * the channel ID that he should use to send messages or the token he should be
+ * using to login.
+ *
+ * It is, however, recommended that you specify these variables in your
+ * deployment environment. If those environment variables are declared, Harrie
+ * will use them instead of the ones beneith.
  */
 const variables = {
   token: null,              // Overruling env. var: DISCORD_TOKEN
