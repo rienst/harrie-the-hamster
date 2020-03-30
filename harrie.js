@@ -23,7 +23,7 @@ const harrie = new Discord.Client()
  * will use them instead of the ones beneith.
  */
 const variables = {
-  token: null,              // Overruling env. var: DISCORD_TOKEN
+  token: null, // Overruling env. var: DISCORD_TOKEN
   notificationChannel: null // Overruling env. var: DISCORD_NOTIFICATION_CHANNEL
 }
 
@@ -34,7 +34,8 @@ const variables = {
  * variables if they are declared.
  */
 const token = process.env.DISCORD_TOKEN || variables.token
-const notificationChannel = process.env.DISCORD_NOTIFICATION_CHANNEL || variables.notificationChannel
+const notificationChannel =
+  process.env.DISCORD_NOTIFICATION_CHANNEL || variables.notificationChannel
 
 /**
  * These are the things Harrie will do when he joins a Discord server.
@@ -49,7 +50,7 @@ harrie.on('ready', () => {
    * Make himself appear online.
    */
   harrie.user.setStatus('available')
-});
+})
 
 /**
  * When someone changes voice channels, Harrie will take actions.
@@ -68,7 +69,7 @@ harrie.on('voiceStateUpdate', (oldMember, newMember) => {
   /**
    * He checks to see if someone joined a channel and didn't just switch to one.
    */
-  if(oldChannel === null && newChannel !== null) {
+  if (oldChannel === null && newChannel !== null) {
     /**
      * If so, he adds a message to the notification that tells everyone that
      * someone joined.
@@ -81,7 +82,7 @@ harrie.on('voiceStateUpdate', (oldMember, newMember) => {
   /**
    * Then he checks to see if someone left the voice channels.
    */
-  if(newChannel === null) {
+  if (newChannel === null) {
     /**
      * And if so, he adds a message to the notification that tells the other
      * people that someone left.
