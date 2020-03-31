@@ -24,7 +24,7 @@ const harrie = new Discord.Client()
  */
 const variables = {
   token: null, // Overruling env. var: DISCORD_TOKEN
-  notificationChannel: null // Overruling env. var: DISCORD_NOTIFICATION_CHANNEL
+  notificationChannel: null, // Overruling env. var: DISCORD_NOTIFICATION_CHANNEL
 }
 
 /**
@@ -58,6 +58,7 @@ harrie.on('ready', () => {
 harrie.on('voiceStateUpdate', (oldMember, newMember) => {
   /**
    * He checks the IDs of the new and old channels.
+   */
   const newChannel = newMember.channelID
   const oldChannel = oldMember.channelID
 
