@@ -5,7 +5,6 @@
  *
  * @author Rien Stenekes <https://rienstenekes.com>
  */
-
 const Discord = require('discord.js')
 
 /**
