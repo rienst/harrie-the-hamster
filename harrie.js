@@ -5,6 +5,12 @@
  *
  * @author Rien Stenekes <https://rienstenekes.com>
  */
+
+/**
+ * The magic from discord.js is brought upon us.
+ *
+ * @see discord.js.org
+ */
 const Discord = require('discord.js')
 
 /**
